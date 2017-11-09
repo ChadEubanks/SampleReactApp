@@ -1,0 +1,11 @@
+input {
+  border: 0px inset;
+  background-color: transparent;
+  cursor: text;
+  outline: none;
+
+  &:focus {
+    border: 1px solid rgba(19, 169, 226, 0.8) !important;
+  }
+
+}

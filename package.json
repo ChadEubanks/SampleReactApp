@@ -1,0 +1,39 @@
+{
+  "name": "tesla",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "4.1.2",
+    "react-scripts": "1.0.10",
+    "redux": "3.7.2",
+    "react-redux": "5.0.5",
+    "redux-saga": "^0.15.6",
+    "jest": "^20.0.4",
+    "jest-cli": "^20.0.4",
+    "jest-css-modules": "^1.1.0",
+    "babel-jest": "^19.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest --verbose || true",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass --include-path scss src/theme/scss/index.scss src/theme/css/main.css",
+    "theme": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/tests/__mocks__/file_mock.js",
+      "\\.(css|less)$": "<rootDir>/src/tests/__mocks__/style_mock.js"
+    }
+  }
+}

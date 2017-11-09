@@ -1,0 +1,57 @@
+@mixin very-thin-weight {
+  font-weight: 200;
+}
+
+@mixin thin-weight {
+  font-weight: 300;
+}
+
+@mixin normal-weight {
+  font-weight: 400;
+}
+
+@mixin thick-weight {
+  font-weight: 500;
+}
+
+@mixin tesla-table-header-weight {
+  font-weight: 500;
+}
+
+@mixin xxxsmall-size-font {
+  font-size: 9px;
+}
+
+@mixin xxsmall-size-font {
+  font-size: 12px;
+}
+
+@mixin xsmall-size-font {
+  font-size: 14px;
+}
+
+@mixin small-size-font {
+  font-size: 16px;
+}
+
+@mixin medium-size-font {
+  font-size: 18px;
+}
+
+@mixin large-size-font {
+  font-size: 20px;
+}
+
+@mixin xlarge-size-font {
+  font-size: 24px;
+}
+
+@mixin normal-font {
+  @include large-size-font;
+  @include normal-weight;
+}
+
+@mixin large-font {
+  @include xlarge-size-font;
+  @include normal-weight;
+}

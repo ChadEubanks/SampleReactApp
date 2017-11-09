@@ -1,0 +1,18 @@
+input[type="checkbox"], input[type="radio"] {
+  appearance: none;
+  cursor: pointer;
+  background-image: url('../images/checkbox_off_icon.png');
+  height: 27px;
+  width: 24px;
+  background-size: 27px;
+
+  &:checked {
+    appearance: none;
+    cursor: pointer;
+    background-image: url('../images/checkbox_on_icon.png');
+    height: 27px;
+    width: 24px;
+    background-size: 27px;
+  }
+
+}

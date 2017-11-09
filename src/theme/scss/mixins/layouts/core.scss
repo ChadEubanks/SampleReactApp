@@ -1,0 +1,50 @@
+@mixin tesla-full-screen-no-scroll {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+@mixin tesla-full-screen-scroll {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0px;
+  overflow: auto;
+}
+
+@mixin tesla-layout-center($x: -50%, $y: -50%) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX($x) translateY($y);
+  -moz-transform: translateX($x) translateY($y);
+  -ms-transform: translateX($x) translateY($y);
+  -o-transform: translateX($x) translateY($y);
+  transform: translateX($x) translateY($y);
+}
+
+@mixin tesla-layout-center-vertical($y: -50%) {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY($y);
+  -moz-transform: translateY($y);
+  -ms-transform: translateY($y);
+  -o-transform: translateY($y);
+  transform: translateY($y);
+}
+
+@mixin tesla-layout-center-horizontal($x: -50%) {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX($y);
+  -moz-transform: translateX($y);
+  -ms-transform: translateX($y);
+  -o-transform: translateX($y);
+  transform: translateX($y);
+}

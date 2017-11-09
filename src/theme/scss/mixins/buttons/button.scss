@@ -1,0 +1,70 @@
+@mixin tesla-text-button($size) {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  outline: none;
+  padding: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-font-smoothing: antialiased;
+  box-shadow: none;
+}
+
+@mixin enlititc-text-button-white ($size: 'normal') {
+  @include tesla-text-button($size);
+  color: $tesla-white;
+
+  &:hover {
+    background-color: transparent !important;
+  }
+
+}
+
+@mixin tesla-action-bar-button {
+  @include tesla-border-right(lighten($tesla-black, 85%));
+  position: relative;
+  display: inline-block;
+  width: 68px;
+  height: 60px;
+
+  input[type="radio"], input[type="checkbox"] {
+    z-index: 2;
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 68px;
+    height: 60px;
+    margin: 0px;
+    border: none;
+  }
+
+  input[type="radio"]:checked, input[type="checkbox"]:checked {
+    z-index: 2;
+    background-color: rgba(0, 123, 215, 0.05);
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 68px;
+    height: 60px;
+    margin: 0px;
+    border: none;
+  }
+
+  img {
+    position: absolute;
+    width: 68px;
+  }
+
+  span {
+    @include normal-weight;
+    @include xxsmall-size-font;
+    color: $tesla-charcoal;
+    margin-top: 42px;
+    display: inline-block;
+    width: 68px;
+    text-align: center;
+  }
+}

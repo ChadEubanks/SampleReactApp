@@ -1,0 +1,13 @@
+.intro-view {
+  @include tesla-full-screen-no-scroll;
+
+  .icon-frame {
+    @include tesla-layout-center;
+
+    .icon {
+      height: 161px;
+    }
+
+  }
+
+}

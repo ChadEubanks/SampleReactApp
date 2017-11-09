@@ -1,0 +1,10 @@
+a {
+  color: $tesla-action-prime;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: darken($tesla-action-prime, 25%) !important;
+  }
+
+}

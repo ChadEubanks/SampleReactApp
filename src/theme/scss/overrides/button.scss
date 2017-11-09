@@ -1,0 +1,35 @@
+button {
+  background-color: #FCFBFC;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  height: 30px;
+  min-width: 125px;
+  outline: none;
+  padding: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-font-smoothing: antialiased;
+
+  &:hover {
+    background-color: rgb(35, 129, 199) !important;
+    color: rgba(0, 0, 0, 0.65);
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+
+  &:active {
+    box-shadow: 0px 1px 2px 0px rgba(19, 169, 226, 0.0), inset 0px 2px 0px 0px #FFFFFF;
+  }
+
+  &:focus {
+    background-color: rgb(35, 129, 199) !important;
+    color: rgba(0, 0, 0, 0.65);
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+
+}

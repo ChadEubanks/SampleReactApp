@@ -1,0 +1,32 @@
+.question-checkbox-frame {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+
+
+  .letter {
+    @include large-size-font;
+    @include thin-weight;
+    color: $tesla-charcoal;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+  }
+
+  .radio {
+    display: inline-block;
+    margin-bottom: -7px;
+    margin-right: 10px;
+  }
+
+  .answer {
+    @include large-size-font;
+    @include thin-weight;
+    color: $tesla-charcoal;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+}

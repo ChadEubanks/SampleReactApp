@@ -1,0 +1,67 @@
+.question-view {
+  @include tesla-full-screen-no-scroll;
+
+  .top-bar {
+    @include tesla-gradiant;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 5px;
+  }
+
+  .icon-frame {
+   position: absolute;
+    top: 20px;
+    left: 20px;
+
+    .icon {
+      height: 38px;
+    }
+
+  }
+
+  .view-title {
+    @include large-font;
+    color: $tesla-charcoal;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    height: 44px;
+    text-align: center;
+  }
+
+  .question-frame {
+    @include tesla-layout-center;
+    width: 420px;
+
+    .question {
+      @include normal-font;
+      color: $tesla-charcoal;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .button {
+    border: 0 solid rgba(151,150,149,0.21);
+    font-family: AvenirNext-Regular;
+    font-size: 20px;
+    color: $tesla-red;
+    letter-spacing: 0;
+    text-shadow: -1px 1px 0 rgba(0,0,0,0.04);
+    background-color: transparent;
+    border: transparent;
+    float: right;
+
+    &:hover, &:hover {
+      background-color: transparent !important;
+      border: transparent !important;
+      outline:none;
+      box-shadow: none;
+    }
+
+  }
+}
